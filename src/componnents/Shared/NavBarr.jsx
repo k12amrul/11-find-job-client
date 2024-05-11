@@ -27,7 +27,7 @@ const  NavBarr = () => {
       <li><NavLink to='/addjob' > Add-Jobs</NavLink> </li>
       
      
-      <li><NavLink to= {`/myjob/${user?.email}`} > My-Jobs </NavLink> </li>
+      <li><NavLink to= {`/myjobs/${user?.email}`} > My-Jobs </NavLink> </li>
      
 
       {/* <li><NavLink to='/blogs' > Blogs</NavLink> </li> */}

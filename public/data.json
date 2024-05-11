@@ -1,0 +1,62 @@
+[
+    {
+      "pictureUrl": "[invalid URL removed]", 
+      "jobTitle": "Software Engineer",
+      "loggedInUserName": "John Doe",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "On-Site",
+      "salaryRange": "$50,000 - $70,000 USD",
+      "jobDescription": "Develop and maintain high-quality, scalable software applications. Write clean, efficient, and well-documented code. Collaborate with cross-functional teams to design, implement, and test software solutions.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "[invalid URL removed]",
+      "jobTitle": "Content Marketing Specialist",
+      "loggedInUserName": "Jane Smith",
+      "loggedInUserEmail": "[email address removed]",
+      "jobCategory": "Remote",
+      "salaryRange": "$80,000 - $100,000 USD",
+      "jobDescription": "Create engaging and informative content that attracts and retains customers. Develop and manage content marketing strategies. Analyze website and social media traffic to measure success.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "[invalid URL removed]",
+      "jobTitle": "Customer Service Representative",
+      "loggedInUserName": "Michael Jones",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "Hybrid",
+      "salaryRange": "$35,000 - $50,000 USD",
+      "jobDescription": "Provide exceptional customer service through phone, email, and chat interactions. Resolve customer inquiries and complaints promptly and professionally. Build strong relationships with customers and promote company products or services.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "[invalid URL removed]",
+      "jobTitle": "Graphic Designer",
+      "loggedInUserName": "Sarah Lee",
+      "loggedInUserEmail": "[email address removed]",
+      "jobCategory": "On-Site",
+      "salaryRange": "Negotiable",
+      "jobDescription": "Create visually appealing and effective graphic design materials for print and digital media. Collaborate with marketing and creative teams to develop brand-consistent visuals.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "[invalid URL removed]", 
+      "jobTitle": "Data Analyst",
+      "loggedInUserName": "David Miller",
+      "loggedInUserEmail": "[email address removed]",
+      "jobCategory": "Remote",
+      "salaryRange": "$60,000 - $80,000 USD",
+      "jobDescription": "Collect, analyze, and interpret data to identify trends and insights. Develop and implement data-driven solutions to improve business processes. Communicate data findings effectively to stakeholders.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    }
+  ]
