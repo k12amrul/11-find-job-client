@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
-                path: '/',
+                path: '/home',
                 loader: () => fetch('http://localhost:5000'),
                 // loader: ()=> fetch('https://a-11-server-eight.vercel.app') ,
                 // loader: ()=> fetch(`process.env.REACT_APP_API_URL`) ,

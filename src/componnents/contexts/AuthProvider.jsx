@@ -56,46 +56,46 @@ const AuthProvider = ({ children }) => {
 
     }
 
-    // useEffect(() => {
+    useEffect(() => {
 
        
-    //     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
-    //         const userEmail = currentUser?.email || user?.email
-    //         const loggedUser = { email: userEmail }
+        const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+            const userEmail = currentUser?.email || user?.email
+            const loggedUser = { email: userEmail }
 
-    //         setUser(currentUser)
-    //         setloading(false)
-
-
-    //         if (currentUser){
-    //             axios.post('http://localhost:5000/jwt', loggedUser, {
-    //                 withCredentials: true
-    //             })
-    //                 .then(res => {
-    //                     console.log(res.data, 'context')
-    //                 })
-    //                 .catch(err => {
-    //                     console.log(err)
-    //                 })
-
-    //         }
-    //         else {
-    //             axios.post('http://localhost:5000/logout', loggedUser, {
-    //                 withCredentials: true
-    //             })
-    //             .then( res => {
-    //                 console.log( res.data )
-    //             })
-    //         }
-    //         console.log(currentUser, 'currentUser')
+            setUser(currentUser)
+            setloading(false)
 
 
+            // if (currentUser){
+            //     axios.post('http://localhost:5000/jwt', loggedUser, {
+            //         withCredentials: true
+            //     })
+            //         .then(res => {
+            //             console.log(res.data, 'context')
+            //         })
+            //         .catch(err => {
+            //             console.log(err)
+            //         })
 
-    //     })
-    //     return () => {
-    //         unSubscribe()
-    //     }
-    // }, [])
+            // }
+            // else {
+            //     axios.post('http://localhost:5000/logout', loggedUser, {
+            //         withCredentials: true
+            //     })
+            //     .then( res => {
+            //         console.log( res.data )
+            //     })
+            // }
+            console.log(currentUser, 'currentUser')
+
+
+
+        })
+        return () => {
+            unSubscribe()
+        }
+    }, [])
 
 
     const authinfo = {
