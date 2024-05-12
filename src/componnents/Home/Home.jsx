@@ -5,7 +5,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
 const jobs =useLoaderData()
-console.log( jobs)
+// console.log( jobs)
 
     return (
         <div>
