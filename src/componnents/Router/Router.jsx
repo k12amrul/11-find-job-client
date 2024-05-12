@@ -50,7 +50,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myjobs/:email',
+                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/myjobs/${params?.email}`) ,
                 element: <MyJobs> </MyJobs>
+            
             },
             {
                 path: '/addjob',
