@@ -9,6 +9,7 @@ import AddJob from "../Jobs/AddJob";
 import AppliedJobs from "../Jobs/AppliedJobs";
 import MyJobs from "../Jobs/MyJobs"
 import Testing from "../Shared/Testing";
+import Home from "../Home/Home";
 
 
 const router = createBrowserRouter([
@@ -19,11 +20,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/home',
-                // loader: () => fetch('http://localhost:5000'),
+                element: <Home></Home>,
+                loader: () => fetch('http://localhost:5000/jobs'),
+                // loader: () => fetch('/data.json'),
     
                 // loader: ()=> fetch(`process.env.REACT_APP_API_URL`) ,
-                loader: ()=> fetch(`${import.meta.env.REACT_APP_API_URL}/jobs`) ,
-                element: <h1>home</h1>,
+                // loader: ()=> fetch(`${import.meta.env.REACT_APP_API_URL}/jobs`) ,
                 // element: <Home></Home>
                 
             },

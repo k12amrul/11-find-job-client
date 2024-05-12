@@ -1,6 +1,16 @@
+import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 
 const test = () => {
+
+
+    // useQuery({
+    //     queryKey: ['todos', todoId],
+    //     queryFn: async () => {
+    //       const data = await fetchTodoById(todoId)
+    //       return data
+    //     },
+    //   })
     return (
         <div>
             test
