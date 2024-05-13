@@ -1,22 +1,20 @@
+
 import React, { useContext } from 'react';
-import { AuthContext } from '../contexts/AuthProvider';
+// import { AuthContext } from '../contexts/AuthProvider';
 import { Label, Select } from "flowbite-react";
 import Swal from 'sweetalert2'
+import { AuthContext } from '../contexts/AuthProvider';
 
-const AddJob = () => {
+
+
+const Updatejob = () => {
+
     const { user } = useContext(AuthContext)
 
     const name = user?.displayName
     const email = user?.email
-    //  const { _id, pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
-    //     loggedInUserEmail, salaryRange, jobDescription,
-    //     applicationDeadline, jobApplicantsNumber
 
-    //   } = jobs ||{}
-    // console.log( name ,email  )
-    // console.log(user?.displayName)
-    // defaultValue={user.displayName }
-    const handleAddJob = (e) => {
+    const handleUpdateJob = (e) => {
         e.preventDefault()
         const form = e.target
         const loggedInUserName = form.name.value
@@ -74,11 +72,11 @@ const AddJob = () => {
 
     return (
         <div>
-            AddJob
-            <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+           Updatejob 
+           <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
                 <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">Account settings</h2>
 
-                <form onSubmit={handleAddJob} >
+                <form onSubmit={handleUpdateJob} >
                     <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
 
                         <div>
@@ -147,4 +145,5 @@ const AddJob = () => {
     );
 };
 
-export default AddJob;
+export default Updatejob;
+

@@ -1,11 +1,24 @@
+import { useQuery } from '@tanstack/react-query';
 import { Button, Table } from 'flowbite-react';
 import React from 'react';
 import { NavLink, useLoaderData } from 'react-router-dom';
 
 const AllJob = () => {
-    // console.log(import.meta.env.VITE_SOME_KEY)
-    const  jobs  = useLoaderData()
-    // console.log(jobs)
+   
+    // const  jobs  = useLoaderData()
+
+    const {data :jobs =[] ,isLoading ,isError ,error }=  useQuery({
+      queryKey: ['allJobs',],
+      queryFn: async () => {
+        const res = await fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/jobs`) 
+        const data = await res.json()
+        return data 
+       
+      },
+    })
+
+    // console.log(jobs , "allJobs")
+
     // const { _id, pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
     //     loggedInUserEmail, salaryRange, jobDescription,
     //     applicationDeadline, jobApplicantsNumber

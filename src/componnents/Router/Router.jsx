@@ -11,6 +11,7 @@ import MyJobs from "../Jobs/MyJobs"
 import Testing from "../Shared/Testing";
 import Home from "../Home/Home";
 import JobDetails from "../Jobs/JobDetails";
+import Updatejob from "../Jobs/Updatejob";
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home></Home>,
-                loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/jobs`),
+                // loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/jobs`),
                
                 
             },
@@ -36,8 +37,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/alljobs',
-                loader: ()=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/jobs`) ,
                 element: <AllJob></AllJob>
+                // loader: ()=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/jobs`) ,
             },
             {
                 path: '/job/:id',
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             {
                 path: '/addjob',
                 element: <AddJob></AddJob>
+            },
+            {
+                path: '/job/update/:id',
+                element: <Updatejob></Updatejob>
             },
             {
                 path: '/test',

@@ -1,7 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-import { Button, Card } from "flowbite-react";
+// import { Button,  } from 'flowbite-react';
+
+import { Button, Card ,Table  } from "flowbite-react";
 import { NavLink } from 'react-router-dom';
 
 
@@ -9,7 +11,7 @@ const MyJobs = () => {
 
     const myJobs = useLoaderData()
 
-        console.log( myJobs )
+        // console.log( myJobs )
         const { _id, pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
             loggedInUserEmail, salaryRange, jobDescription,
             applicationDeadline, jobApplicantsNumber
@@ -19,33 +21,44 @@ const MyJobs = () => {
 
 
     return (
-        <div>
-        {
-            myJobs.map( job =>   <Card
-                className="max-w-sm"
-                imgAlt="Meaningful alt text for an image that is not purely decorative"
-                imgSrc="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-              >
-                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {jobTitle}
-                </h5>
-                <h1>   _id {_id}</h1>
-        
-                <h5 className="text-1xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {jobCategory}
-                </h5>
-                <h2> jobPostingDate : {jobPostingDate} </h2>
-                <h2> applicationDeadline :{applicationDeadline} </h2>
-                <p className="font-normal text-gray-700 dark:text-gray-400">
-                  {jobDescription}
-                </p>
-                <NavLink to={`/job/${_id}`}>
-                <Button pill>Details</Button>
-                </NavLink>
-        
-              </Card>  )
-        }
-      
+        <div className="overflow-x-auto   ">
+        <Table striped>
+          <Table.Head>
+            <Table.HeadCell> Job Title</Table.HeadCell>
+            <Table.HeadCell>Job Posting Date</Table.HeadCell>
+            <Table.HeadCell>Application Deadline</Table.HeadCell>
+            <Table.HeadCell>Salary Range</Table.HeadCell>
+            <Table.HeadCell>Details</Table.HeadCell>
+            <Table.HeadCell>
+              <span className="sr-only">Edit</span>
+            </Table.HeadCell>
+          </Table.Head>
+          <Table.Body className="divide-y">
+{
+    myJobs?.map(  ( job ,ix )  =>  
+    
+    <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+    <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+    {job?.jobTitle} 
+    </Table.Cell>
+    
+    <Table.Cell>{job?.jobPostingDate} </Table.Cell>
+    <Table.Cell>{job?.applicationDeadline} </Table.Cell>
+    <Table.Cell> {job?.salaryRange} </Table.Cell>
+    <Table.Cell>
+    <NavLink to={`/job/update/${job?._id}`}>
+        <Button  pill>Update</Button>
+        </NavLink>
+    </Table.Cell>
+    <Table.Cell> <Button color="failure" pill>
+        Delate 
+      </Button></Table.Cell>
+  </Table.Row> )
+}
+
+         
+          </Table.Body>
+        </Table>
       </div>
     );
 };
