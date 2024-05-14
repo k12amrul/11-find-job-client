@@ -2,12 +2,14 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../contexts/AuthProvider';
 import { Label, Select } from "flowbite-react";
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom';
 
 const AddJob = () => {
     const { user } = useContext(AuthContext)
-
-    const name = user?.displayName
+    
     const email = user?.email
+    const name = user?.displayName
+    const navigate =useNavigate()
     //  const { _id, pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
     //     loggedInUserEmail, salaryRange, jobDescription,
     //     applicationDeadline, jobApplicantsNumber
@@ -32,25 +34,25 @@ const AddJob = () => {
         const jobCategory = form.jobCategory.value
 
         const jobData = {
-         pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
+            pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
             loggedInUserEmail, salaryRange, jobDescription,
             applicationDeadline, jobApplicantsNumber
 
         }
         console.log(jobData)
 
-        fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job` ,
-        
-        {
-            method: "POST",
-            headers: {
-                // "Content-Type": "application/json",
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(jobData),
+        fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job`,
+
+            {
+                method: "POST",
+                headers: {
+                    // "Content-Type": "application/json",
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify(jobData),
 
 
-        })
+            })
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -62,6 +64,7 @@ const AddJob = () => {
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
+                    navigate(`/myjobs/${user?.email}`)
 
                 }
             }

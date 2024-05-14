@@ -22,10 +22,10 @@ const  NavBarr = () => {
   const navLinks = <>
   
       <li><NavLink to='/home' >Home</NavLink> </li>
-      <li><NavLink to='/alljobs' > All-Jobs</NavLink> </li>
+      <li><NavLink to='/alljobs' > Jobs</NavLink> </li>
       <li><NavLink to='/appliedjobs' > Applied-Jobs</NavLink> </li>
-      <li><NavLink to='/addjob' > Add-Jobs</NavLink> </li>
-      <li><NavLink to='/blogs' > Blogs </NavLink> </li>
+      <li><NavLink to='/addjob' > Add-Job</NavLink> </li>
+      <li><NavLink to='/blogs' > Blog </NavLink> </li>
       
      
       <li><NavLink to= {`/myjobs/${user?.email}`} > My-Jobs </NavLink> </li>
@@ -43,18 +43,18 @@ const  NavBarr = () => {
 
      } */}
       {/* <li><NavLink to='/about' >About</NavLink> </li> */}
-      <label className="inline-flex items-center cursor-pointer">
+      {/* <label className="inline-flex items-center cursor-pointer">
   <input type="checkbox" value="" className="sr-only peer" defaultChecked />
   <div className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
   <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Checked toggle</span>
-</label>
+</label> */}
 
   </>
 
 
   
   return (
-    <Navbar fluid rounded  className=" flex ">
+    <Navbar fluid rounded  className=" flex  ">
       <Navbar.Brand href="https://flowbite-react.com">
         <img  src="https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Job Stock </span>

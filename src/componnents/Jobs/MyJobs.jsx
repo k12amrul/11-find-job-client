@@ -1,22 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 // import { Button,  } from 'flowbite-react';
 
 import { Button, Card ,Table  } from "flowbite-react";
 import { NavLink } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import MyJobsCard from './MyJobsCard';
 
 
 const MyJobs = () => {
 
     const myJobs = useLoaderData()
+    console.log(myJobs  ,'myjob')
+    const [  jobs ,setJobs ] =useState(myJobs  )
+
 
         // console.log( myJobs )
-        const { _id, pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
-            loggedInUserEmail, salaryRange, jobDescription,
-            applicationDeadline, jobApplicantsNumber
+        // const { _id, pictureUrl, jobCategory, jobTitle, jobPostingDate, loggedInUserName,
+        //     loggedInUserEmail, salaryRange, jobDescription,
+        //     applicationDeadline, jobApplicantsNumber
         
-          } = myJobs
+        //   } = myJobs
+
+          // const handleDelete = (id) => {
+
+          //   // console.log(id)
+        
+          //   Swal.fire({
+          //     title: "Are you sure?",
+          //     text: "You won't be able to revert this!",
+          //     icon: "warning",
+          //     showCancelButton: true,
+          //     confirmButtonColor: "#3085d6",
+          //     cancelButtonColor: "#d33",
+          //     confirmButtonText: "Yes, delete it!"
+          //   }).then((result) => {
+          //     if (result.isConfirmed) {
+        
+          //      fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job/${id}`, {
+          //         method: 'DELETE',
+          //         // headers: 
+        
+          //       })
+          //         .then(res => res.json())
+          //         .then(data => {
+          //           console.log(data)
+          //           if (data.deletedCount > 0) {
+          //             Swal.fire({
+          //               title: "Deleted!",
+          //               text: "Your file has been deleted.",
+          //               icon: "success"
+          //             })
+                     
+          //             const remaningJobs = jobs?.filter(job  => job._id !== id)
+          //            console.log( remaningJobs )
+          //             setJobs(remaningJobs )
+        
+          //           }
+          //         })
+        
+        
+        
+          //     }
+          //   });
+        
+        
+          // }
         
 
 
@@ -37,23 +87,15 @@ const MyJobs = () => {
 {
     myJobs?.map(  ( job ,ix )  =>  
     
-    <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-    <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-    {job?.jobTitle} 
-    </Table.Cell>
-    
-    <Table.Cell>{job?.jobPostingDate} </Table.Cell>
-    <Table.Cell>{job?.applicationDeadline} </Table.Cell>
-    <Table.Cell> {job?.salaryRange} </Table.Cell>
-    <Table.Cell>
-    <NavLink to={`/job/update/${job?._id}`}>
-        <Button  pill>Update</Button>
-        </NavLink>
-    </Table.Cell>
-    <Table.Cell> <Button color="failure" pill>
-        Delate 
-      </Button></Table.Cell>
-  </Table.Row> )
+   <MyJobsCard 
+   job={job}
+   key={ix}
+   jobs={jobs}
+   setJobs={setJobs}
+
+   > </MyJobsCard>
+
+)
 }
 
          

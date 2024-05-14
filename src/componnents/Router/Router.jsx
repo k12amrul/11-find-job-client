@@ -61,6 +61,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/job/update/:id',
+                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job/${params.id}`) ,
                 element: <Updatejob></Updatejob>
             },
             {
