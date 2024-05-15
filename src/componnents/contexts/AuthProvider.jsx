@@ -67,26 +67,26 @@ const AuthProvider = ({ children }) => {
             setloading(false)
 
 
-            if (currentUser){
-                axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/jwt`, loggedUser, {
-                    withCredentials: true
-                })
-                    .then(res => {
-                        console.log(res.data, 'context')
-                    })
-                    .catch(err => {
-                        console.log(err)
-                    })
+            // if (currentUser){
+            //     axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/jwt`, loggedUser, {
+            //         withCredentials: true
+            //     })
+            //         .then(res => {
+            //             console.log(res.data, 'context')
+            //         })
+            //         .catch(err => {
+            //             console.log(err)
+            //         })
 
-            }
-            else {
-                axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/logout`, loggedUser, {
-                    withCredentials: true
-                })
-                .then( res => {
-                    console.log( res.data )
-                })
-            }
+            // }
+            // else {
+            //     axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/logout`, loggedUser, {
+            //         withCredentials: true
+            //     })
+            //     .then( res => {
+            //         console.log( res.data )
+            //     })
+            // }
             console.log(currentUser, 'currentUser')
 
 

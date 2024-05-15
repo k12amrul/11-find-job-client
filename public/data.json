@@ -1,6 +1,6 @@
 [
     {
-      "pictureUrl": "[invalid URL removed]", 
+      "pictureUrl": "https://media.istockphoto.com/id/819810922/photo/male-executive-working-over-laptop-at-his-desk.jpg?s=612x612&w=0&k=20&c=_Gj917gWZ6CqTjI0nAByLEzdS4Z3uZP6HihIdykNGjA=", 
       "jobTitle": "Software Engineer",
       "loggedInUserName": "John Doe",
       "loggedInUserEmail": "kamrul96k@gmail.com",
@@ -12,8 +12,20 @@
       "jobApplicantsNumber": 0
     },
     {
-      "pictureUrl": "[invalid URL removed]",
+      "pictureUrl": "https://media.istockphoto.com/id/928080694/photo/businessman-filling-application-for-employment-form-on-laptop.jpg?s=612x612&w=0&k=20&c=OYi4Y7DTQh55Wg673M5WrpK8NSOBtb_2OwL5pInxmfk=",
       "jobTitle": "Content Marketing Specialist",
+      "loggedInUserName": "Jane Smith",
+      "loggedInUserEmail": "[email address removed]",
+      "jobCategory": "Remote",
+      "salaryRange": "$80,000 - $100,000 USD",
+      "jobDescription": "Create engaging and informative content that attracts and retains customers. Develop and manage content marketing strategies. Analyze website and social media traffic to measure success.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "https://media.istockphoto.com/id/819817312/photo/executives-using-laptop-at-their-desk.jpg?s=612x612&w=0&k=20&c=dNFB3OAugIX94vmerUIZgSBdzsyl8Raq8nA8ffZ6jPo=",
+      "jobTitle": " Marketing ",
       "loggedInUserName": "Jane Smith",
       "loggedInUserEmail": "[email address removed]",
       "jobCategory": "Remote",
@@ -36,7 +48,19 @@
       "jobApplicantsNumber": 0
     },
     {
-      "pictureUrl": "[invalid URL removed]",
+      "pictureUrl": "https://media.istockphoto.com/id/649176426/photo/businesswoman-doing-online-shopping-on-mobile-phone.jpg?s=612x612&w=0&k=20&c=_tTryAyorNGYWZFuQPGy6B8OD_M6xd0Pjy81VZ-sAjg=",
+      "jobTitle": "Graphic Designer",
+      "loggedInUserName": "Michael Jones",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "Hybrid",
+      "salaryRange": "$35,000 - $50,000 USD",
+      "jobDescription": "Provide exceptional customer service through phone, email, and chat interactions. Resolve customer inquiries and complaints promptly and professionally. Build strong relationships with customers and promote company products or services.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "https://media.istockphoto.com/id/1349094945/photo/human-using-a-computer-laptop-for-searching-for-job-and-fill-out-personal-data-on-job-website.jpg?s=612x612&w=0&k=20&c=nVCY302pin29eP1rN0eBGstQN3WF4YQTWvZ4TvAs21g=",
       "jobTitle": "Graphic Designer",
       "loggedInUserName": "Sarah Lee",
       "loggedInUserEmail": "[email address removed]",
@@ -48,13 +72,62 @@
       "jobApplicantsNumber": 0
     },
     {
-      "pictureUrl": "[invalid URL removed]", 
+      "pictureUrl": "https://media.istockphoto.com/id/1060090732/photo/close-up-businessman-typing-on-keyboard-laptop-at-loft-office-for-search-data-information-and.jpg?s=612x612&w=0&k=20&c=R_CJEr_CW-zto8Ga-r-yIgb51Y5Wkmjy8WPqmXjCRHE=", 
       "jobTitle": "Data Analyst",
       "loggedInUserName": "David Miller",
       "loggedInUserEmail": "[email address removed]",
       "jobCategory": "Remote",
       "salaryRange": "$60,000 - $80,000 USD",
       "jobDescription": "Collect, analyze, and interpret data to identify trends and insights. Develop and implement data-driven solutions to improve business processes. Communicate data findings effectively to stakeholders.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+      
+    },
+    {
+      "pictureUrl": "https://media.istockphoto.com/id/1213829343/photo/entrepreneur-working-on-laptop-online-man-using-computer.jpg?s=612x612&w=0&k=20&c=xct7JtXROjKuTkjPhn1bOZirs4MZ-R6oAUI99f2GxOI=",
+      "jobTitle": "Software Engineer",
+      "loggedInUserName": "John Doe",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "Part-Time",
+      "salaryRange": "$50,000 - $70,000 USD",
+      "jobDescription": "Develop and maintain high-quality, scalable software applications. Write clean, efficient, and well-documented code. Collaborate with cross-functional teams to design, implement, and test software solutions.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "https://media.istockphoto.com/id/1289716940/photo/job-search-website-on-laptop-find-a-job.jpg?s=612x612&w=0&k=20&c=1oPcCsCYKDd4yGnq2HmmUaYxnGqSY40WuLxRXkPUNhw=",
+      "jobTitle": "Software Engineer",
+      "loggedInUserName": "John Doe",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "Part-Time",
+      "salaryRange": "$50,000 - $70,000 USD",
+      "jobDescription": "Develop and maintain high-quality, scalable software applications. Write clean, efficient, and well-documented code. Collaborate with cross-functional teams to design, implement, and test software solutions.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "https://media.istockphoto.com/id/1395557714/photo/business-hierarchy-structure-business-process-and-workflow-automation-with-flowchart-virtual.jpg?s=612x612&w=0&k=20&c=OLd_K5dXcdrzyY9B6xjgcDrjmRADSS9tjIKs5Dm3l74=",
+      "jobTitle": "Software Engineer",
+      "loggedInUserName": "John Doe",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "Part-Time",
+      "salaryRange": "$50,000 - $70,000 USD",
+      "jobDescription": "Develop and maintain high-quality, scalable software applications. Write clean, efficient, and well-documented code. Collaborate with cross-functional teams to design, implement, and test software solutions.",
+      "jobPostingDate": "2024-05-12",
+      "applicationDeadline": "2024-05-27",
+      "jobApplicantsNumber": 0
+    },
+    {
+      "pictureUrl": "https://media.istockphoto.com/id/1395557714/photo/business-hierarchy-structure-business-process-and-workflow-automation-with-flowchart-virtual.jpg?s=612x612&w=0&k=20&c=OLd_K5dXcdrzyY9B6xjgcDrjmRADSS9tjIKs5Dm3l74=",
+      "jobTitle": "Software Engineer",
+      "loggedInUserName": "John Doe",
+      "loggedInUserEmail": "kamrul96k@gmail.com",
+      "jobCategory": "Part-Time",
+      "salaryRange": "$50,000 - $70,000 USD",
+      "jobDescription": "Develop and maintain high-quality, scalable software applications. Write clean, efficient, and well-documented code. Collaborate with cross-functional teams to design, implement, and test software solutions.",
       "jobPostingDate": "2024-05-12",
       "applicationDeadline": "2024-05-27",
       "jobApplicantsNumber": 0

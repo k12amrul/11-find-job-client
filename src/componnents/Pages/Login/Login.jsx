@@ -17,7 +17,7 @@ const Login = () => {
     const location = useLocation()
     const navigate = useNavigate()
     const { error,
-      setError, googleLogin, githubLogin, setloading } = useContext(AuthContext)
+      setError, googleLogin, logIn, githubLogin, setloading } = useContext(AuthContext)
   
 
     const handleLogin = (data) => {

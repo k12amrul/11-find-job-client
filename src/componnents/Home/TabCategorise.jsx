@@ -9,12 +9,28 @@ const TabCategorise = ({ jobs }) => {
 
         <Tabs>
             <TabList>
+                <Tab>All jobs</Tab>
                 <Tab>On-Site</Tab>
                 <Tab>Remote </Tab>
                 <Tab>Hybrid</Tab>
                 <Tab>Part-Time</Tab>
             </TabList>
 
+            <TabPanel>
+                <div className='grid gap-5 grid-cols-1  mt-15 md:grid-cols-2   lg:grid-cols-3 ' >
+
+                    {
+                        jobs?.map(job => <JobCard
+                            key={job?._id}
+                            job={job}
+                        >
+
+                        </JobCard>)
+                    }
+
+                </div>
+
+            </TabPanel>
             <TabPanel>
                 <div className='grid gap-5 grid-cols-1  mt-15 md:grid-cols-2   lg:grid-cols-3 ' >
 
