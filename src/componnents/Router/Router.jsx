@@ -12,6 +12,8 @@ import Testing from "../Shared/Testing";
 import Home from "../Home/Home";
 import JobDetails from "../Jobs/JobDetails";
 import Updatejob from "../Jobs/Updatejob";
+import Blogs from "../Home/Blogs";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -42,7 +44,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/job/:id',
-                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job/${params.id}`) ,
+                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job/${params.id}`,  { credentials: 'include' }) ,
                 element: <JobDetails> </JobDetails>
             },
             {
@@ -51,8 +53,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myjobs/:email',
-                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/myjobs/${params?.email}`) ,
-                element: <MyJobs> </MyJobs>
+                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/myjobs/${params?.email}`, { credentials: 'include' }) ,
+                element: <PrivateRoute>
+                    <MyJobs> </MyJobs>
+
+                </PrivateRoute>
+                
             
             },
             {
@@ -61,8 +67,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/job/update/:id',
-                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job/${params.id}`) ,
+                loader: ({params})=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/job/${params.id}` , { credentials: 'include' }) ,
                 element: <Updatejob></Updatejob>
+            },
+            {
+                path: '/blogs',
+                element: <Blogs></Blogs>
             },
             {
                 path: '/test',

@@ -1,12 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../contexts/AuthProvider';
 import { Label, Select } from "flowbite-react";
 import Swal from 'sweetalert2'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from 'react-router-dom';
+
+
 
 const AddJob = () => {
     const { user } = useContext(AuthContext)
-    
+    const [startDate, setStartDate] = useState(new Date());
     const email = user?.email
     const name = user?.displayName
     const navigate =useNavigate()
@@ -77,7 +81,7 @@ const AddJob = () => {
 
     return (
         <div>
-            AddJob
+            Add Job
             <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
                 <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">Account settings</h2>
 
@@ -125,13 +129,16 @@ const AddJob = () => {
                             <label className="text-gray-700 dark:text-gray-200" htmlFor="">Job Description </label>
                             <input id="jobDescription" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
                         </div>
-                        <div>
-                            <label className="text-gray-700 dark:text-gray-200" htmlFor="">Job Posting Date </label>
-                            <input id="jobPostingDate" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                        <div >
+                            <label className=" text-gray-700 dark:text-gray-200" htmlFor="">Job Posting Date </label>
+                           
+                            <DatePicker className="rounded-md   " id="jobPostingDate" selected={startDate} onChange={(date) => setStartDate(date)} /> 
+                            {/* <input id="jobPostingDate" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" /> */}
                         </div>
                         <div>
                             <label className="text-gray-700 dark:text-gray-200" htmlFor="">Application Deadline </label>
-                            <input id="applicationDeadline" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                            {/* <input id="applicationDeadline" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" /> */}
+                            <DatePicker className="rounded-md   " id="applicationDeadline" selected={startDate} onChange={(date) => setStartDate(date)} /> 
                         </div>
                         <div>
                             <label className="text-gray-700 dark:text-gray-200" htmlFor=""> Job Applicants Number </label>
