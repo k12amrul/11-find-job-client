@@ -65,15 +65,14 @@ npm install
 npm start
 
 ### Create a .env.local file and configure the Firebase keys:
--  VITE_apiKey=hidden
--  VITE_authDomain=hidden
--  VITE_projectId=hidden
--  VITE_storageBucket=hidden
--  VITE_messagingSenderId=hidden
--  VITE_appId=hidden
--  VITE_SERVER_URL=https://sm-bead.vercel.app
 
-
+- VITE_APIKEY= 
+- VITE_AUTHDOMAIN= 
+- VITE_PROJECTID=
+- VITE_STORAGEBUCKET=
+- VITE_MESSAGINGSENDERID= 
+- VITE_APPID= 
+- VITE_REACT_APP_API_URL="https://a-11-job-server.vercel.app"
 
 
 
