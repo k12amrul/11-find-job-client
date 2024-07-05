@@ -1,15 +1,24 @@
 
+# Job Stock
 
+ [website](https://subtle-jalebi-3f9c3c.netlify.app/)
 
- [website](https://effortless-frangipane-69f683.netlify.app/)
-
- [github  client ]( https://github.com/programming-hero-web-course1/b9a12-client-side-k12amrul)
+ [github  client ](https://github.com/Porgramming-Hero-web-course/b9a11-client-side-k12amrul )
  
- [github  server ](  https://github.com/programming-hero-web-course1/b9a12-server-side-k12amrul) 
+ [github  server ](  https://github.com/Porgramming-Hero-web-course/b9a11-server-side-k12amrul) 
 
-# Features
 
-- Distinctive Design: BMS features a unique design, avoiding similarities with previous examples. Free design resources were used for inspiration.
+#  Project Overview  
+- Job Stock is a comprehensive job search platform designed to connect job seekers with potential employers.
+  
+- Users can search for jobs, apply directly through the platform, and track their application status.
+  
+- The main goal of this project is to streamline the job search process and provide a seamless experience for both job seekers and employers.
+
+
+## Features
+
+- Distinctive Design: Job Slock features a unique design, avoiding similarities with previous examples. Free design resources were used for inspiration.
 
 - Responsive Layout: Ensures seamless user experience across mobile, tablet, and desktop devices.
 
@@ -33,11 +42,12 @@ This project was developed using the following technologies:
 -  React Hook form
 -  Swiper slider
 -  AOSPackage
+-  react tab 
 
 - **Backend:**
   - Node.js
   - Express.js
-  - jwt
+  - 
 
 - **Database:**
   - MongoDB
@@ -46,15 +56,15 @@ This project was developed using the following technologies:
 
 Instructions on how to install and set up your project locally.
 
-```bash
-# Clone the repository
 
-# Install dependencies
+### Clone the repository
+
+### Install dependencies
 npm install
-# Start the development server
+### Start the development server
 npm start
 
-# Create a .env.local file and configure the Firebase keys:
+### Create a .env.local file and configure the Firebase keys:
 -  VITE_apiKey=hidden
 -  VITE_authDomain=hidden
 -  VITE_projectId=hidden
