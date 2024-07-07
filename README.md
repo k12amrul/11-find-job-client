@@ -3,9 +3,9 @@
 
  [website](https://subtle-jalebi-3f9c3c.netlify.app/)
 
- [github  client ](https://github.com/Porgramming-Hero-web-course/b9a11-client-side-k12amrul )
+ [https://github.com/k12amrul/11-find-job-client )
  
- [github  server ](  https://github.com/Porgramming-Hero-web-course/b9a11-server-side-k12amrul) 
+ [https://github.com/k12amrul/11-job-server) 
 
 
 #  Project Overview  
